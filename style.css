@@ -1,0 +1,188 @@
+body {
+    margin-top: 60px;
+    font-family: 'Dosis', sans-serif;
+    background: #efefef;
+}
+
+.container.principal {
+    text-align: center;
+    background: rgba(255, 255, 255, .6);
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, .6);
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to right, #2659ad, #2e6cd1);
+    height: 60px;
+    font-size: 30px;
+    color: white;
+    z-index: 9;
+}
+
+.brand {
+    padding: 7px;
+    float: left;
+}
+
+.menu {
+    float: right;
+}
+
+.menu li {
+    margin-left: 10px;
+    padding: 15px;
+    font-size: 21px;
+    display: inline-block;
+    text-transform: uppercase;
+    transition: background .2s;
+    cursor: pointer;
+}
+
+.selected,
+.menu li:hover {
+    background: rgba(0, 0, 0, .2);
+}
+
+.menu-item,
+.menu-item:hover,
+.menu-item:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.ball {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    margin-right: 50px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-image: url("img/profile.jpg");
+    background-size: cover;
+    padding-top: 70px;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 20px navy;
+    text-align: center;
+    color: white;
+    box-shadow: 0px 0px 10px #2659ad;
+}
+
+.about-text {
+    display: inline-block;
+    width: 550px;
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.about {
+    margin-left: 170px;
+    padding-top: 120px;
+    width: 800px;
+}
+
+.portifolio {
+    padding-top: 140px;
+}
+
+.portifolio-text,
+.contact-text {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.contact {
+    margin-top: 100px;
+}
+
+.portifolio-img {
+    width: 100%;
+    box-shadow: 0px 0px 10px #2659ad;
+    height: 170px;
+}
+
+.row {
+    margin-bottom: 20px;
+}
+
+.contact {
+    margin-bottom: 70px;
+}
+
+.contact p {
+    font-size: 20px;
+}
+
+.form-input {
+    font-size: 15px;
+}
+
+input.form-input {
+    display: inline-block;
+    margin-top: 10px;
+    width: 350px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0px 0px 10px #2659ad;
+}
+
+textarea.form-input {
+    display: inline-block;
+    margin-top: 10px;
+    width: 350px;
+    height: 170px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0px 0px 10px #2659ad;
+}
+
+button.form-input {
+    display: inline-block;
+    margin-top: 10px;
+    width: 100px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background: linear-gradient(to right, #2659ad, #2e6cd1);
+    color: white;
+    font-weight: bolder;
+    text-transform: uppercase;
+    transition: all .3s;
+}
+
+button.form-input:hover {
+    display: inline-block;
+    margin-top: 10px;
+    width: 100px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0px 0px 10px #2659ad;
+    background: linear-gradient(to right, #2659ad, #2e6cd1);
+    color: white;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.copy {
+    text-align: center;
+    width: 100%;
+    background: linear-gradient(to right, #2659ad, #2e6cd1);
+    height: 40px;
+    padding: 8px;
+    font-size: 18px;
+    color: white;
+}
+
+.copy a {
+    color: cyan;
+}
