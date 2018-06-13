@@ -1,0 +1,369 @@
+:root {
+    --main-cv-color: #2c4a38;
+    --secundary-cv-color: #1f3427;
+    --main-text-color: #333;
+    --secundary-text-color: #878787;
+}
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: -0.1rem;
+    color: var(--main-text-color);
+    background-color: #dedede;
+}
+
+p.is-justified,
+li {
+    line-height: 1.5rem;
+}
+
+li {
+    padding-left: 2em;
+    text-indent: -.7em;
+}
+
+li::before {
+    content: "•";
+    margin-right: 10px;
+    color: var(--main-cv-color);
+}
+
+a:hover {
+    color: darkgreen;
+}
+
+.boxed-layout {
+    padding-bottom: 100px;
+    background-color: white;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.2);
+}
+
+.columns {
+    margin: 0px;
+}
+
+.header-columns {
+    border-top: 10px solid var(--secundary-cv-color);
+    background-color: var(--main-cv-color);
+    height: 175px;
+}
+
+.header-container {
+    margin-bottom: 50px;
+    font-weight: 200;
+}
+
+.section-subtitle.is-black {
+    margin-bottom: 3px;
+}
+
+.section-title {
+    color: var(--main-cv-color);
+    text-transform: lowercase;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+.section-subtitle {
+    color: var(--main-cv-color);
+    margin-bottom: -4px;
+}
+
+.section-subtitle:not(:first-child) {
+    margin-top: 5px;
+}
+
+.container-padding-sides {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.date {
+    color: var(--secundary-text-color);
+    margin-top: 5px;
+    font-weight: 200;
+}
+
+.avatar {
+    min-width: 150px;
+    max-width: 100%;
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+.last-edit {
+    color: var(--secundary-text-color);
+    margin-top: 40px;
+    margin-right: 35px;
+    margin-bottom: 10px;
+    font-weight: 100;
+    font-style: italic;
+    float: right;
+}
+
+.is-black {
+    color: #222;
+}
+
+.is-white {
+    color: white;
+}
+
+.is-white a {
+    text-decoration: none;
+    color: white;
+}
+
+.is-white a:hover {
+    text-decoration: none;
+    color: rgb(195, 255, 215);
+}
+
+.is-main {
+    color: var(--main-cv-color)
+}
+
+.is-round {
+    border-radius: 50%;
+}
+
+.is-centered {
+    text-align: center;
+}
+
+.is-horizontal-center {
+    justify-content: center;
+}
+
+.is-aligned-right {
+    text-align: right;
+}
+
+.is-aligned-left {
+    text-align: left;
+}
+
+.is-justified {
+    text-align: justify;
+}
+
+.is-vertical-center {
+    margin-top: 50px;
+}
+
+.is-paddingless-vertically {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.is-size-55 {
+    font-size: 1.55rem;
+}
+
+.is-12 {
+    padding-top: 0px;
+    padding-bottom:0px;
+    margin: 0px;
+    margin-bottom: -20px;
+}
+
+.is-half {
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+@media print {
+    :root {
+        --main-cv-color: #494949;
+        --secundary-cv-color: #333333;
+        --main-text-color: #333;
+        --secundary-text-color: #878787;
+    }
+    body {
+        font-size: 1.05rem;
+    }
+    .avatar {
+        display: none;
+    }
+    .boxed-layout {
+        padding-top: 40px !important;
+        padding-bottom: 0px !important;
+        box-shadow: none;
+    }
+    .header-columns {
+        border: none;
+        background: none;
+        height: 0px;
+        display: block !important;
+    }
+    .header-columns .column {
+        margin: 0;
+        padding: 0;
+    }
+    .header-contact {
+        display: none;
+    }
+    .header-name {
+        height: 100px !important;
+        font-weight: 400;
+        position: absolute;
+        top: 0px;
+        left: 30px;
+    }
+    .header-name::after {
+        content: "maot.rodrigues@gmail.com • (19) 99687-6858";
+        width: 500px;
+        font-size: 1rem;
+        margin-top: -30px !important;
+        position: absolute;
+        top: 37.5px;
+        left: 50%;
+    }
+    .last-edit {
+        color: var(--secundary-text-color);
+        margin-top: 0px;
+        margin-right: 10px;
+        font-weight: 100;
+        font-style: italic;
+        float: right;
+    }
+    .is-white,
+    a {
+        color: black;
+    }
+    .is-vertical-center {
+        margin-top: 0px !important;
+    }
+    .is-size-4 {
+        font-size: 1.5rem !important;
+    }
+    .is-size-55 {
+        font-size: 1.15rem !important;
+        letter-spacing: -0.12rem;
+    }
+    .is-size-2 {
+        font-size: 1.5rem !important;
+    }
+    .is-vertical-center {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .avatar {
+        margin-top: 35px !important;
+        min-width: 130px !important;
+    }
+    .is-size-4 {
+        font-size: 1.25rem !important;
+    }
+    .is-size-55 {
+        font-size: 1.35rem !important;
+        letter-spacing: -0.12rem;
+    }
+    .is-size-2 {
+        font-size: 2rem !important;
+    }
+    .is-vertical-center {
+        margin-top: 70px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 1.05rem;
+    }
+    .date {
+        margin-top: 0px !important;
+    }
+    .avatar {
+        width: 140px !important;
+        margin-top: 30px !important;
+    }
+    .header-contact {
+        margin-left: -30px;
+    }
+    .header-name {
+        margin-right: -30px;
+    }
+    .is-size-4 {
+        font-size: 1.2rem !important;
+    }
+    .is-size-55 {
+        font-size: 1.15rem !important;
+        letter-spacing: -0.12rem;
+    }
+    .is-size-2 {
+        font-size: 1.9rem !important;
+    }
+    .is-vertical-center {
+        margin-top: 60px;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    body {
+        font-size: 1rem;
+    }
+
+    .header-contact {
+        margin-left: -20px;
+    }
+
+    .header-name {
+        margin-right: -20px;
+    }
+    .section-title {
+        margin-top: 20px !important;
+        margin-bottom: 7px !important;
+    }
+    .is-size-4 {
+        font-size: 1rem !important;
+    }
+    .is-size-55 {
+        font-size: 1.1rem !important;
+        letter-spacing: -0.12rem;
+    }
+    .is-size-2 {
+        font-size: 1.5rem !important;
+    }
+    .is-vertical-center {
+        margin-top: 70px;
+    }
+}
+
+@media screen and (max-width: 615px) {
+    .avatar {
+        margin-left: 0px;
+        width: 170px !important;
+        margin-top: 20px !important;
+    }
+    .header-name {
+        margin-right: 0px;
+    }
+    .date {
+        margin-top: 12.5px !important;
+    }
+    .column {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+    .section-subtitle.is-size-55:last-child {
+        margin-top: 10px;
+    }
+    .is-flex-responsive {
+        display: block !important;
+    }
+    .is-vertical-center {
+        margin-top: 70px;
+    }
+    .header-contact {
+        display: none;
+    }
+}
