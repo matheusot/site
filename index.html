@@ -1,15 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt">
 
 <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8">
+    <meta name="description" content="Curriculum Vitae de Matheus Otávio Rodrigues">
+    <meta name="keywords" content="cv, curriculum, vitae, unicamp, matheus, otávio, rodrigues">
+    <meta name="author" content="Matheus Otávio Rodrigues">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <title>CV Matheus Rodrigues</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="manifest" href="manifest.json">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:100,200,300,400,500,600" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script> -->
     <link rel="stylesheet" type="text/css" media="screen, print" href="css/main.css" />
+
     <meta name="theme-color" content="#002102" />
     <meta name="msapplication-navbutton-color" content="#002102" />
     <meta name="apple-mobile-web-app-status-bar-style" content="#002102" />
@@ -28,20 +35,20 @@
                 <div class="column">
                     <div class="is-aligned-right is-vertical-center is-size-4 header-name">
                         <p>Matheus Otávio Rodrigues</p>
-                        <a href="https://www.linkedin.com/in/mathrod" target="_blank">linkedin.com/in/mathrod</a>
+                        <a href="https://www.linkedin.com/in/mathrod" target="noopener">linkedin.com/in/mathrod</a>
                     </div>
                 </div>
 
                 <div class="column is-unselectable is-one-fifth">
                     <figure class="image avatar is-centered">
-                        <img src="img/profile.jpg" class="is-round is-centered">
+                        <img src="img/profile.jpg" class="is-round is-centered" alt="Imagem de perfil de Matheus Otávio Rodrigues">
                     </figure>
                 </div>
 
                 <div class="column header-contact">
                     <div class="is-aligned-left is-vertical-center is-size-4">
                         <p>maot.rodrigues@gmail.com</p>
-                        <p>(19) 99687-6858</p>
+                        <p id="header-tel-number">(19) 99687-6858</p>
                     </div>
                 </div>
 
@@ -51,7 +58,7 @@
         <div class="container container-padding-sides">
             <div class="columns is-flex-touch is-flex-responsive">
                 <div class="column is-12">
-                    <h1 class="section-title is-size-2">Experiências Profissionais</h1>
+                    <h1 class="section-title is-size-2" id="professional-experiences">Experiências Profissionais</h1>
                 </div>
 
             </div>
@@ -65,12 +72,12 @@
                         </div>
 
                         <div class="column is-paddingless is-marginless">
-                            <p class="date is-aligned-right">out/2016 - fev/2017</p>
+                            <p class="date is-aligned-right" id="professional-dae-date">out/2016 - fev/2017</p>
                         </div>
                     </div>
 
-                    <h2 class="section-subtitle is-black is-size-55">Estagiário em Suporte de TI</h2>
-                    <p class="is-justified">Auxílio ao usuário com relação a problemas de hardware e software, servidores e rede local, além da programação
+                    <h2 class="section-subtitle is-black is-size-55" id="professional-dae-function">Estagiário em Suporte de TI</h2>
+                    <p class="is-justified" id="professional-dae-desc">Auxílio ao usuário com relação a problemas de hardware e software, servidores e rede local, além da programação
                         de um aplicativo próprio para uso dos cidadãos residentes na cidade de Americana.</p>
                 </div>
 
@@ -81,12 +88,12 @@
                         </div>
 
                         <div class="column is-paddingless is-marginless">
-                            <p class="date is-aligned-right">fev/2017 - abr/2017</p>
+                            <p class="date is-aligned-right" id="professional-actio-date">fev/2017 - abr/2017</p>
                         </div>
                     </div>
 
-                    <h2 class="section-subtitle is-black is-size-55">Estagiário de Desenvolvimento e Suporte em SI</h2>
-                    <p class="is-justified">Auxílio ao usuário com relação a problemas de hardware e software, servidores e rede local, além da programação
+                    <h2 class="section-subtitle is-black is-size-55" id="professional-actio-function">Estagiário de Desenvolvimento e Suporte em SI</h2>
+                    <p class="is-justified" id="professional-actio-desc">Auxílio ao usuário com relação a problemas de hardware e software, servidores e rede local, além da programação
                         de um aplicativo próprio para uso dos cidadãos residentes na cidade de Americana.</p>
                 </div>
 
@@ -97,56 +104,57 @@
                 <div class="column is-half">
 
                     <!--    Formação Acadêmica    -->
-                    <h1 class="section-title is-size-2">Formação Acadêmica</h1>
-                    <h2 class="section-subtitle is-size-55">Universidade de Campinas - UNICAMP</h2>
+                    <h1 class="section-title is-size-2" id="academic-formation">Formação Acadêmica</h1>
+                    <h2 class="section-subtitle is-size-55" id="academic-unicamp">Universidade de Campinas - UNICAMP</h2>
                     <ul>
-                        <li>Ciência da Computação / 2018 - atual</li>
+                        <li id="academic-computer">Ciência da Computação / 2018 - atual</li>
                     </ul>
-                    <h2 class="section-subtitle is-size-55">Colégio Técnico de Limeira - UNICAMP</h2>
+                    <h2 class="section-subtitle is-size-55" id="academic-cotil">Colégio Técnico de Limeira - UNICAMP</h2>
                     <ul>
-                        <li>Técnico em Informática / 2015 - 2017</li>
-                        <li>Ensino Médio / 2015 - 2017</li>
+                        <li id="academic-technician">Técnico em Informática / 2015 - 2017</li>
+                        <li id="academic-highschool">Ensino Médio / 2015 - 2017</li>
                     </ul>
 
                     <!--    Competências    -->
-                    <h1 class="section-title is-size-2">Competências</h1>
+                    <h1 class="section-title is-size-2" id="skills">Competências</h1>
                     <div class="columns is-flex-touch">
                         <div class="column is-half">
                             <ul>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>Javascript</li>
-                                <li>Jquery</li>
-                                <li>PHP</li>
-                                <li>Python</li>
+                                <li id="skills-html">HTML</li>
+                                <li id="skills-css">CSS</li>
+                                <li id="skills-javascript">Javascript</li>
+                                <li id="skills-jquery">JQuery</li>
+                                <li id="skills-php">PHP</li>
+                                <li id="skills-python">Python</li>
                             </ul>
                         </div>
                         <div class="column is-half">
                             <ul>
-                                <li>Java</li>
-                                <li>MySQL</li>
-                                <li>GIT</li>
-                                <li>Photoshop</li>
-                                <li>Premiere</li>
-                                <li>Office</li>
+                                <li id="skills-java">Java</li>
+                                <li id="skills-mysql">MySQL</li>
+                                <li id="skills-git">GIT</li>
+                                <li id="skills-photoshop">Photoshop</li>
+                                <li id="skills-premeire">Premiere</li>
+                                <li id="skills-office">Office</li>
                             </ul>
                         </div>
                     </div>
 
 
                     <!--    Idiomas    -->
-                    <h1 class="section-title is-size-2">Idiomas</h1>
+                    <h1 class="section-title is-size-2" id="languages">Idiomas</h1>
                     <ul>
-                        <li>Inglês: Avançado</li>
-                        <li>Espanhol: Básico</li>
+                        <li id="languages-portuguese">Português: Nativo</li>
+                        <li id="languages-english">Inglês: Avançado</li>
+                        <li id="languages-spanish">Espanhol: Básico</li>
                     </ul>
 
 
                     <!--    Patentes    -->
-                    <h1 class="section-title is-size-2">Patentes</h1>
+                    <h1 class="section-title is-size-2" id="patents">Patentes</h1>
                     <ul>
-                        <li class="is-justified">Web Aplicativo para registro de chamados e ocorrências
-                            <a target="_blank" class="is-main" href="https://gru.inpi.gov.br/pePI/servlet/ProgramaServletController?Action=detail&CodPedido=20787&SearchParameter=">BR 51 2017 000006 9</a>
+                        <li class="is-justified" id="patents-webappdae">Web Aplicativo para registro de chamados e ocorrências
+                            <a target="noopener" class="is-main" href="https://gru.inpi.gov.br/pePI/servlet/ProgramaServletController?Action=detail&CodPedido=20787&SearchParameter=">BR 51 2017 000006 9</a>
                         </li>
                     </ul>
                 </div>
@@ -188,9 +196,6 @@
                     <ul>
                         <li>M001 - MongoDB Basics</li>
                     </ul>
-                    
-
-                    
                 </div>
             </div>
         </div>
