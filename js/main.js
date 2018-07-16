@@ -38,7 +38,7 @@ let en = {
     "courses-basic-java": "Basic Java",
 }
 
-window.onload = () => {
+let setMonth = () => {
     let lang = navigator.language || navigator.userLanguage;
     let months = []
     if (lang != 'pt-BR' && lang != 'pt') {
@@ -51,5 +51,17 @@ window.onload = () => {
     }
     let date = new Date();
     document.getElementById("last-edit").innerHTML = months[date.getMonth()] + '/' + date.getFullYear();
+}
+
+let goBack = () => {
+    let url = window.location.href;
+    if (url.indexOf('?') != -1) {
+        document.getElementsByClassName("back-btn")[0].style.display = "block";
+    }
+}
+
+window.onload = () => {
+    setMonth();
+    goBack();
 }
 
