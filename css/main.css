@@ -95,7 +95,7 @@ a:hover {
 
 .date {
     color: var(--secundary-text-color);
-    margin-top: 5px;
+    margin-top: 8px;
     font-weight: 200;
 }
 
@@ -117,6 +117,10 @@ a:hover {
     font-weight: 100;
     font-style: italic;
     float: right;
+}
+
+.is-margin-10 {
+    margin-bottom: 10px;
 }
 
 .is-black {
@@ -176,6 +180,10 @@ a:hover {
 
 .is-size-55 {
     font-size: 1.55rem;
+}
+
+.is-size-8 {
+    font-size: 1.8rem;
 }
 
 .is-12 {
